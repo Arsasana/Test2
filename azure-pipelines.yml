@@ -30,8 +30,8 @@ jobs:
          PathtoPublish: 'artifact1.2'
          ArtifactName: 'A1.2'
          publishLocation: 'Container'
-      - powershell: |
-            ls $(Build.ArtifactStagingDirectory)/
+      # - powershell: |
+      #       ls $(Build.ArtifactStagingDirectory)/
  - job: J2
    pool:
     name: default
