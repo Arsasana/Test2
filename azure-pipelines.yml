@@ -11,11 +11,6 @@
 #      name: jainamanjain/Repo1
 
 jobs:
- - deployment: deploy
-   displayName: somedeploy
-   pool:
-    name: default
-   environment: environment1
  - job: J1
    pool:
     name: default
