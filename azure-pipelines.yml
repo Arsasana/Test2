@@ -13,7 +13,7 @@
 jobs:
  - job: J1
    pool:
-    name: default
+    vmImage: 'ubuntu-latest'
    steps:
       - task: PublishBuildArtifacts@1
         inputs:
@@ -21,9 +21,14 @@ jobs:
          ArtifactName: 'A1.1'
  - job: J2
    pool:
-    name: default
+    vmImage: 'ubuntu-latest'
    steps:
       - task: PublishBuildArtifacts@1
         inputs:
          PathtoPublish: 'artifact2'
          ArtifactName: 'A2'
+
+
+      #         Write-Host $(resources.container.ACRResourceLatest.location)
+
+
