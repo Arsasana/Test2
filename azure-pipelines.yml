@@ -12,8 +12,7 @@
 
 jobs:
  - job: J1
-   pool:
-    vmImage: 'ubuntu-latest'
+   pool: Default
    steps:
       - task: PublishBuildArtifacts@1
         inputs:
