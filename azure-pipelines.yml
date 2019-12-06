@@ -12,7 +12,8 @@
 
 jobs:
  - job: J1
-   pool: Default
+   pool: 
+    name : Default
    steps:
       - task: PublishBuildArtifacts@1
         inputs:
