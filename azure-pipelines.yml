@@ -10,6 +10,8 @@
 #      endpoint: MyGithubConnection
 #      name: jainamanjain/Repo1
 
+trigger: none
+
 jobs:
  - job: J1
    pool: 
