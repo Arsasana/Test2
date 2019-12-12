@@ -20,7 +20,7 @@ jobs:
      artifact: A1
      
  - deployment: D1
-   pool:
+   pool: Default
    environment: 'E1Arsasana'
    strategy:
     runOnce:
