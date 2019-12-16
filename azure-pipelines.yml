@@ -25,7 +25,7 @@ jobs:
       #    ArtifactName: 'A1.1'
  - job: J2
    pool:
-    vmImage: 'ubuntu-latest'
+    name: Default
    steps:
    - publish: $(Pipeline.workspace)/
      artifact: A2
