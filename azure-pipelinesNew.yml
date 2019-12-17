@@ -1,0 +1,33 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+# resources:
+#  repositories:
+#    - repository: R1
+#      type: GitHub
+#      endpoint: MyGithubConnection
+#      name: jainamanjain/Repo1
+
+trigger: none
+
+jobs:
+ - job: J1
+   pool:
+    name: default
+   steps:
+      - task: PublishBuildArtifacts@1
+        inputs:
+         PathtoPublish: 'artifact1.1'
+         ArtifactName: 'A1.1'
+ - job: J2
+   pool:
+    name: default
+   steps:
+      - task: PublishBuildArtifacts@1
+        inputs:
+         PathtoPublish: 'artifact2'
+         ArtifactName: 'A2'
+
+
