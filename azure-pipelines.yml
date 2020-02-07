@@ -16,9 +16,9 @@ jobs:
  - job: J1
    pool: 
     name : Default
-   steps:
-   - publish: $(Pipeline.workspace)/
-     artifact: A1.1
+
+  #  - publish: $(Pipeline.workspace)/
+  #    artifact: A1.1
       # - task: PublishBuildArtifacts@1
       #   inputs:
       #    PathtoPublish: 'artifact1.1'
@@ -26,9 +26,9 @@ jobs:
  - job: J2
    pool:
     name: Default
-   steps:
-   - publish: $(Pipeline.workspace)/
-     artifact: A2
+   
+  #  - publish: $(Pipeline.workspace)/
+  #    artifact: A2
       # - task: PublishBuildArtifacts@1
       #   inputs:
       #    PathtoPublish: 'artifact2'
