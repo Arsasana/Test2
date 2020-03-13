@@ -15,7 +15,7 @@ trigger: none
 jobs:
  - job: J1
    pool: 
-    name : Azure Pipeline 4
+    name : Default
 
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A1.1
@@ -26,7 +26,7 @@ jobs:
          ArtifactName: 'A1.1'
  - job: J2
    pool:
-    name: Azure Pipeline 5
+    name: Default
    
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A2
