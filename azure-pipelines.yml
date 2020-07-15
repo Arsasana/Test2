@@ -26,7 +26,7 @@ jobs:
          ArtifactName: 'A1.1'
  - job: J2
    pool:
-    name: Default
+    name: Azure Pipelines
    
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A2
