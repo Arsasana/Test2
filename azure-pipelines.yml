@@ -15,7 +15,7 @@ trigger: none
 jobs:
  - job: J1
    pool: 
-    name : Default
+    name : Azure Pipelines
 
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A1.1
