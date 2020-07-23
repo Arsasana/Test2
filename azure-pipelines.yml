@@ -13,8 +13,8 @@
 
 jobs:
  - job: J1
-   pool: 
-    name : Azure Pipelines
+   pool:
+    vmImage: 'ubuntu-latest'
 
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A1.1
