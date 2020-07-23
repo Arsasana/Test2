@@ -19,10 +19,10 @@ jobs:
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A1.1
     stages:
-      - task: PublishBuildArtifacts@1
-        inputs:
-         PathtoPublish: 'artifact1.1'
-         ArtifactName: 'A1.1'
+      # - task: PublishBuildArtifacts@1
+      #   inputs:
+      #    PathtoPublish: 'artifact1.1'
+      #    ArtifactName: 'A1.1'
       - task: GitHubComment@0
         inputs:
           gitHubConnection: 'github'
