@@ -14,7 +14,7 @@
 jobs:
  - job: J1
    pool:
-    vmImage: 'ubuntu-latest'
+    name : Default
 
   #  - publish: $(Pipeline.workspace)/
   #    artifact: A1.1
