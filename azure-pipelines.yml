@@ -23,11 +23,11 @@ jobs:
          inputs:
           PathtoPublish: 'artifact1.1'
           ArtifactName: 'A1.1'
-      - task: GitHubComment@0
-        inputs:
-          gitHubConnection: 'github'
-          repositoryName: 'Arsasana/Test2'
-          comment: 'add a random comment'
+      # - task: GitHubComment@0
+      #   inputs:
+      #     gitHubConnection: 'github'
+      #     repositoryName: 'Arsasana/Test2'
+      #     comment: 'add a random comment'
 # #  - job: J2
 #    pool:
 #     name: Azure Pipelines
